@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  app-vue:
+    image: ${REPO}/{IMAGE}:v1
+    ports:
+      - "${PUBLIC_PORT}:${CONTAINER_PORT}"
+    restart: unless-stopped
